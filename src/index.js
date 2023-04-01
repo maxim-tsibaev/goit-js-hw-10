@@ -13,7 +13,7 @@ const divEl = document.querySelector('.country-info');
 inputEl.addEventListener('input', debounce(inputHandler, DEBOUNCE_DELAY));
 
 function inputHandler(e) {
-  queryName = e.target.value.trim();
+  const queryName = e.target.value.trim();
   if (queryName === '') {
     return;
   }
